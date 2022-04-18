@@ -1,4 +1,4 @@
-# Evee
+# Eevee
 ## Evolve your code generation
 In many projects metaprogramming can be used to safe time by generating boilerplate code or auto
 generating APIs etc. Often times the most efficient solution to the problem is to write a little custom program
@@ -21,5 +21,5 @@ most of my use cases are already covered.
 
 ## Installation
 
-Either build the `evee` project and add the library to your project or just directly add the
+Either build the `eevee` project and add the library to your project or just directly add the
 source files into your project.
