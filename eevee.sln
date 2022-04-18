@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "evee", "evee\evee.csproj", "{98674344-A626-4015-90F8-5C04B4C861DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eevee", "eevee\eevee.csproj", "{98674344-A626-4015-90F8-5C04B4C861DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c-sharp-example", "c-sharp-example\c-sharp-example.csproj", "{C9E906A7-4CD5-4031-A0CD-B2AC05277454}"
 EndProject

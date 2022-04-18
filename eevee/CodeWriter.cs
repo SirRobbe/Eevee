@@ -1,11 +1,12 @@
 using System.Text;
 
-namespace Evee
+namespace Eevee
 {
     public partial class CodeWriter
     {
-        public CodeWriter()
+        public CodeWriter(string fileHeaderContent = "")
         {
+            FileHeaderContent = fileHeaderContent;
             m_StringBuilder = new StringBuilder(FileHeaderContent);
             NewLine();
         }
@@ -15,7 +16,6 @@ namespace Evee
             IndentLevel = 0;
             m_StringBuilder.Clear();
             m_StringBuilder.AppendLine(FileHeaderContent);
-            NewLine();
         }
 
         public void NewLine()
@@ -111,15 +111,16 @@ namespace Evee
         public void BeginBlock()
         {
             WriteIndentation();
-            m_StringBuilder.Append("{\r\n");
+            m_StringBuilder.AppendLine("{");
             IndentLevel++;
         }
 
-        public void EndBlock()
+        public void EndBlock(bool withSemicolon = false)
         {
             IndentLevel--;
             WriteIndentation();
-            m_StringBuilder.Append("}\r\n");
+            string line = withSemicolon ? "};" : "}";
+            m_StringBuilder.AppendLine(line);
         }
 
         // ---------------------------------------------------------------------------------------------------------- //
@@ -162,6 +163,6 @@ namespace Evee
         public string FileHeaderContent = "";
         public int IndentLevel;
         
-        private readonly StringBuilder m_StringBuilder;
+        protected readonly StringBuilder m_StringBuilder;
     }
 }

@@ -2,9 +2,10 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>code_writer_lib</RootNamespace>
+        <RootNamespace>Evee</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
+        <AssemblyVersion>0.1.0</AssemblyVersion>
     </PropertyGroup>
 
 </Project>

@@ -1,6 +1,6 @@
-﻿namespace Evee
+﻿namespace Eevee
 {
-    public sealed partial class CodeWriter
+    public partial class CodeWriter
     {
         public sealed class ForLoop : IDisposable
         {

@@ -1,4 +1,4 @@
-﻿namespace Evee
+﻿namespace Eevee
 {
     public enum AccessModifier
     {
