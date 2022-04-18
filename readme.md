@@ -21,5 +21,5 @@ most of my use cases are already covered.
 
 ## Installation
 
-Either build the `code-writer-lib` project and add the library to your project or just directly add the
+Either build the `evee` project and add the library to your project or just directly add the
 source files into your project.
