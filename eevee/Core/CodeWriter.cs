@@ -4,7 +4,7 @@ namespace Eevee
 {
     public partial class CodeWriter
     {
-        public CodeWriter(string fileHeaderContent = "")
+        protected CodeWriter(string fileHeaderContent = "")
         {
             FileHeaderContent = fileHeaderContent;
             m_StringBuilder = new StringBuilder(FileHeaderContent);
@@ -25,18 +25,6 @@ namespace Eevee
             m_StringBuilder.AppendLine("");
         }
         
-        public void BeginIf(string condition)
-        {
-            WriteLine($"if({condition})");
-            BeginBlock();
-        }
-
-        public void BeginElse()
-        {
-            WriteLine("else");
-            BeginBlock();
-        }
-
         public void WriteLine(string line)
         {
             WriteIndentation();
@@ -58,14 +46,6 @@ namespace Eevee
             m_StringBuilder.AppendLine(line);
         }
 
-        // TODO(Fabian): These functions need a scoped class. - Issue#1
-        // ---------------------------------------------------------------------------------------------------------- //
-        // NOTE(Fabian): The End-Methods are just wrappers around EndBlock to make the
-        //               generation code using the API more readable.
-        public void EndIf() => EndBlock();
-        public void EndElse() => EndBlock();
-        // ---------------------------------------------------------------------------------------------------------- //
-        
         private void WriteIndentation()
         {
             int indents = IndentLevel * 4;

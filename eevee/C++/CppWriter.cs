@@ -17,6 +17,4 @@ public partial class CppWriter : CodeWriter
         string args = arguments == null ? "" : string.Join(", ", arguments);
         m_StringBuilder.AppendLine($"#define {name}({args}) {evaluation}");
     }
-    
-    
 }
