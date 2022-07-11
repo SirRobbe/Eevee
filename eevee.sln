@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eevee", "eevee\eevee.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c-sharp-example", "c-sharp-example\c-sharp-example.csproj", "{C9E906A7-4CD5-4031-A0CD-B2AC05277454}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cpp-example", "cpp-example\cpp-example.csproj", "{6E228645-0847-4116-AB70-1E93172D7671}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{C9E906A7-4CD5-4031-A0CD-B2AC05277454}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E906A7-4CD5-4031-A0CD-B2AC05277454}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E906A7-4CD5-4031-A0CD-B2AC05277454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E228645-0847-4116-AB70-1E93172D7671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E228645-0847-4116-AB70-1E93172D7671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E228645-0847-4116-AB70-1E93172D7671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E228645-0847-4116-AB70-1E93172D7671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
